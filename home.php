@@ -206,7 +206,7 @@ if (!isset($_SESSION['user'])) {
           <ul class="why-list">
             <li><span class="wl-dot"></span>Équipements Life Fitness & Technogym</li>
             <li><span class="wl-dot"></span>Coachs diplômés d'État &amp; certifiés internationaux</li>
-            <li><span class="wl-dot"></span>Application mobile pour suivre tes progrès</li>
+            <li><span class="wl-dot"></span>Siteweb pour suivre tes progrès</li>
             <li><span class="wl-dot"></span>Vestiaires premium &amp; douches chaudes</li>
             <li><span class="wl-dot"></span>Parking gratuit &amp; WiFi haut débit</li>
           </ul>
@@ -227,6 +227,7 @@ if (!isset($_SESSION['user'])) {
   </section>
 
   <!-- ══ TRAINERS ══ -->
+ <!-- ══ TRAINERS ══ -->
   <section class="section" id="trainers">
     <div class="container">
       <div class="sec-head">
@@ -235,12 +236,31 @@ if (!isset($_SESSION['user'])) {
         <p class="sec-sub">Des professionnels certifiés passionnés par ta transformation.</p>
       </div>
       <div class="trainers-grid">
+ 
+        <!-- COACH 1 -->
         <div class="trainer-card">
           <div class="trainer-img-wrap">
             <img src="coache-mas.jpg" alt="Karim Mansouri" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="trainer-placeholder" style="display:none"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="14" stroke="#c8f000" stroke-width="2"/><path d="M8 58c0-13 11-22 24-22s24 9 24 22" stroke="#c8f000" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div class="trainer-overlay"><div class="trainer-socials"><a href="#" class="tsoc">in</a><a href="#" class="tsoc">ig</a></div></div>
-            <div class="trainer-spec-badge">Cardio & Endurance</div>
+            <div class="trainer-overlay">
+              <div class="resa-panel">
+                <p class="resa-coach-name">Karim Mansouri</p>
+                <p class="resa-spec">Cardio &amp; Endurance</p>
+                <div class="resa-fields">
+                  <input type="date" class="resa-input" id="date-1"/>
+                  <select class="resa-input" id="time-1">
+                    <option value="">Choisir l'heure</option>
+                    <option>06:00</option><option>07:00</option><option>08:00</option>
+                    <option>09:00</option><option>10:00</option><option>14:00</option>
+                    <option>15:00</option><option>16:00</option><option>17:00</option>
+                    <option>18:00</option><option>19:00</option>
+                  </select>
+                </div>
+                <button class="resa-btn" onclick="reserver(1,'Karim Mansouri')">Réserver <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <p class="resa-confirm" id="confirm-1"></p>
+              </div>
+            </div>
+            <div class="trainer-spec-badge">Cardio &amp; Endurance</div>
           </div>
           <div class="trainer-body">
             <h3 class="trainer-name">Karim Mansouri</h3>
@@ -248,12 +268,31 @@ if (!isset($_SESSION['user'])) {
             <div class="trainer-stats"><span class="tstat"><svg width="13" height="13" viewBox="0 0 24 24" fill="#c8f000"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.9</span><span class="tstat">320 clients</span></div>
           </div>
         </div>
+ 
+        <!-- COACH 2 -->
         <div class="trainer-card">
           <div class="trainer-img-wrap">
             <img src="coache_mas2.jpg" alt="Yassine Trabelsi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="trainer-placeholder" style="display:none"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="14" stroke="#c8f000" stroke-width="2"/><path d="M8 58c0-13 11-22 24-22s24 9 24 22" stroke="#c8f000" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div class="trainer-overlay"><div class="trainer-socials"><a href="#" class="tsoc">in</a><a href="#" class="tsoc">ig</a></div></div>
-            <div class="trainer-spec-badge">Boxe & MMA</div>
+            <div class="trainer-overlay">
+              <div class="resa-panel">
+                <p class="resa-coach-name">Yassine Trabelsi</p>
+                <p class="resa-spec">Boxe &amp; MMA</p>
+                <div class="resa-fields">
+                  <input type="date" class="resa-input" id="date-2"/>
+                  <select class="resa-input" id="time-2">
+                    <option value="">Choisir l'heure</option>
+                    <option>06:00</option><option>07:00</option><option>08:00</option>
+                    <option>09:00</option><option>10:00</option><option>14:00</option>
+                    <option>15:00</option><option>16:00</option><option>17:00</option>
+                    <option>18:00</option><option>19:00</option>
+                  </select>
+                </div>
+                <button class="resa-btn" onclick="reserver(2,'Yassine Trabelsi')">Réserver <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <p class="resa-confirm" id="confirm-2"></p>
+              </div>
+            </div>
+            <div class="trainer-spec-badge">Boxe &amp; MMA</div>
           </div>
           <div class="trainer-body">
             <h3 class="trainer-name">Yassine Trabelsi</h3>
@@ -261,12 +300,31 @@ if (!isset($_SESSION['user'])) {
             <div class="trainer-stats"><span class="tstat"><svg width="13" height="13" viewBox="0 0 24 24" fill="#c8f000"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.9</span><span class="tstat">195 clients</span></div>
           </div>
         </div>
+ 
+        <!-- COACH 3 -->
         <div class="trainer-card">
           <div class="trainer-img-wrap">
             <img src="coache-fem.jpg" alt="Nour Chouchane" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="trainer-placeholder" style="display:none"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="14" stroke="#c8f000" stroke-width="2"/><path d="M8 58c0-13 11-22 24-22s24 9 24 22" stroke="#c8f000" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div class="trainer-overlay"><div class="trainer-socials"><a href="#" class="tsoc">in</a><a href="#" class="tsoc">ig</a></div></div>
-            <div class="trainer-spec-badge">Yoga & Mobilité</div>
+            <div class="trainer-overlay">
+              <div class="resa-panel">
+                <p class="resa-coach-name">Nour Chouchane</p>
+                <p class="resa-spec">Yoga &amp; Mobilité</p>
+                <div class="resa-fields">
+                  <input type="date" class="resa-input" id="date-3"/>
+                  <select class="resa-input" id="time-3">
+                    <option value="">Choisir l'heure</option>
+                    <option>06:00</option><option>07:00</option><option>08:00</option>
+                    <option>09:00</option><option>10:00</option><option>14:00</option>
+                    <option>15:00</option><option>16:00</option><option>17:00</option>
+                    <option>18:00</option><option>19:00</option>
+                  </select>
+                </div>
+                <button class="resa-btn" onclick="reserver(3,'Nour Chouchane')">Réserver <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <p class="resa-confirm" id="confirm-3"></p>
+              </div>
+            </div>
+            <div class="trainer-spec-badge">Yoga &amp; Mobilité</div>
           </div>
           <div class="trainer-body">
             <h3 class="trainer-name">Nour Chouchane</h3>
@@ -274,23 +332,43 @@ if (!isset($_SESSION['user'])) {
             <div class="trainer-stats"><span class="tstat"><svg width="13" height="13" viewBox="0 0 24 24" fill="#c8f000"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 5.0</span><span class="tstat">240 clients</span></div>
           </div>
         </div>
+ 
+        <!-- COACH 4 -->
         <div class="trainer-card">
           <div class="trainer-img-wrap">
             <img src="coache_fem2.jpg" alt="Sarra Belhadj" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="trainer-placeholder" style="display:none"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="14" stroke="#c8f000" stroke-width="2"/><path d="M8 58c0-13 11-22 24-22s24 9 24 22" stroke="#c8f000" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div class="trainer-overlay"><div class="trainer-socials"><a href="#" class="tsoc">in</a><a href="#" class="tsoc">ig</a></div></div>
+            <div class="trainer-overlay">
+              <div class="resa-panel">
+                <p class="resa-coach-name">Sarra Belhadj</p>
+                <p class="resa-spec">Coaching Perso</p>
+                <div class="resa-fields">
+                  <input type="date" class="resa-input" id="date-4"/>
+                  <select class="resa-input" id="time-4">
+                    <option value="">Choisir l'heure</option>
+                    <option>06:00</option><option>07:00</option><option>08:00</option>
+                    <option>09:00</option><option>10:00</option><option>14:00</option>
+                    <option>15:00</option><option>16:00</option><option>17:00</option>
+                    <option>18:00</option><option>19:00</option>
+                  </select>
+                </div>
+                <button class="resa-btn" onclick="reserver(4,'Sarra Belhadj')">Réserver <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <p class="resa-confirm" id="confirm-4"></p>
+              </div>
+            </div>
             <div class="trainer-spec-badge">Coaching Perso</div>
           </div>
           <div class="trainer-body">
             <h3 class="trainer-name">Sarra Belhadj</h3>
-            <p class="trainer-bio">Spécialiste en transformation corporelle sur mesure. Suivi nutrition & entraînement combinés.</p>
+            <p class="trainer-bio">Spécialiste en transformation corporelle sur mesure. Suivi nutrition &amp; entraînement combinés.</p>
             <div class="trainer-stats"><span class="tstat"><svg width="13" height="13" viewBox="0 0 24 24" fill="#c8f000"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.8</span><span class="tstat">280 clients</span></div>
           </div>
         </div>
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ══ GALLERY ══ -->
   <section class="section gallery-section" id="gallery">
     <div class="container">
@@ -419,7 +497,7 @@ if (!isset($_SESSION['user'])) {
             </div>
             <div class="bmi-cta" id="bmiCta" style="display:none">
               <p class="bmi-cta-text" id="bmiCtaText"></p>
-              <a href="register.html" class="btn-gold-lg" style="font-size:.85rem;padding:10px 20px;">Voir mon programme</a>
+              <a href="programs.php" class="btn-gold-lg" style="font-size:.85rem;padding:10px 20px;">Voir mon programme</a>
             </div>
           </div>
         </div>
