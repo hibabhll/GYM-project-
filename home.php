@@ -83,7 +83,7 @@ if (!isset($_SESSION['user'])) {
         </a>
 
         <!-- REJOINDRE -->
-        <a href="register.html" class="btn-gold">Rejoindre</a>
+        <a href="register.php" class="btn-gold">Rejoindre</a>
 
       </div>
       <button class="burger" id="burger" aria-label="menu">
@@ -120,7 +120,7 @@ if (!isset($_SESSION['user'])) {
       </h1>
       <p class="hero-desc">Rejoins ADRENA — l'espace où coachs d'élite, équipements professionnels et ambiance incomparable se réunissent pour transformer ta vie.</p>
       <div class="hero-btns">
-        <a href="register.html" class="btn-gold-lg">Commencer maintenant</a>
+        <a href="register.php" class="btn-gold-lg">Commencer maintenant</a>
         <a href="#services" class="btn-outline-lg">Découvrir →</a>
       </div>
       <div class="hero-stats">
