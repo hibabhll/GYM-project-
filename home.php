@@ -526,7 +526,7 @@ if (!isset($_SESSION['user'])) {
             <li class="yes">Parking gratuit</li><li class="no">Cours collectifs (Boxe / Yoga)</li>
             <li class="no">Coaching personnalisé</li><li class="no">Accès prioritaire aux créneaux</li>
           </ul>
-          <a href="register.html" class="price-btn">Choisir Basic</a>
+          <a href="register.php" class="price-btn">Choisir Basic</a>
         </div>
         <div class="price-card price-featured">
           <div class="price-badge">Le plus populaire</div>
@@ -541,7 +541,7 @@ if (!isset($_SESSION['user'])) {
             <li class="yes">Parking gratuit</li><li class="yes">Cours collectifs illimités (Boxe / Yoga)</li>
             <li class="yes">2 séances coaching personnalisé/mois</li><li class="yes">Accès prioritaire aux créneaux</li>
           </ul>
-          <a href="register.html" class="price-btn price-btn-gold">Choisir Pro</a>
+          <a href="register.php" class="price-btn price-btn-gold">Choisir Pro</a>
         </div>
       </div>
       <p class="pricing-note">✦ Sans engagement — résiliation possible à tout moment. Essai gratuit 3 jours disponible.</p>
